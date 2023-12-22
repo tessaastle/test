@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ADD8E6; /* Light blue color */
+  color: #333; /* Dark grey text */
+}
+
+/* Navigation Bar */
+.navbar {
+  margin-bottom: 20px;
+}
+
+/* Watercolor Section */
+#watercolor-intro {
+  text-align: center;
+}
+
+#watercolor-intro img {
+  width: 100%; /* Set width to take full container width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 300px; /* Maximum height for all images */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  margin-bottom: 20px; /* Space below each image */
+}
+
+/* Video Tutorial Section */
+#video-tutorial iframe {
+  width: 100%;
+  height: 315px;
+  margin-top: 20px;
+}
+
+/* Resume Section */
+#resume {
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#resume h2 {
+  color: #007bff; /* Bootstrap primary color */
+}
+
+/* Profile Picture Styles */
+.profile-picture {
+  width: 75px; /* Smaller size */
+  height: 75px; /* Smaller size */
+  border-radius: 50%; /* Keeps the image round */
+  border: 2px solid #007bff; /* Slightly thinner border */
+  display: block;
+  margin: 10px auto 20px; /* Adjusted margin for smaller image */
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #f5f5f5;
+  color: #777;
+  text-align: center;
+  padding: 10px 0;
+  position: relative; /* Changed from 'absolute' */
+  bottom: 0;
+  width: 100%;
+}
+
+.footer .text-muted {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 767px) {
+  #watercolor-intro img, #video-tutorial iframe {
+      width: 100%;
+      height: auto;
+  }
+}
